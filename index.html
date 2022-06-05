@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enzo Wilndager</title>
+    <title>Enzo Wildanger</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
 </head>
@@ -138,12 +138,13 @@
     <div class="contenedor-contacto">
         <div class="contacto-formulario">
             <h4>Enviame un mensaje...</h4>
-            <form class="formulario">
-                <input type="text" placeholder="Nombre">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Deja tu mensaje aqui...">     
+            <form class="formulario" method="post" id="form">
+                <input type="text" placeholder="Nombre" id="name" required>
+                <input type="email" placeholder="Email" id="email" required >
+                <textarea placeholder="Deja tu mensaje aqui..." id="menssage" required>     
                 </textarea>
-                <button class="btn-enviar">Enviar mensaje</button>  
+                <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                <p class="warnings" id="warnigns"></p>
             </form>
         </div>
     </div>
@@ -164,5 +165,6 @@
 
     </div>
 </footer>
+<script src='./app.js'></script>
 </body>
 </html>

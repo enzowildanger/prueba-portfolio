@@ -264,6 +264,14 @@ span{
     box-shadow: none;
 }
 
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+}
+
 .footer{
     display: flex;
     flex-direction: column;
